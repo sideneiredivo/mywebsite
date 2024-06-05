@@ -1,0 +1,176 @@
+Baixar git
+Instalar git
+ git --version
+-------------------
+Cria pasta git
+Configurar git:
+ git config --global user.name "Sidenei Redivo"
+ git config --global user.email sideneiredivo@gmail.com
+ git config --global init.default branch main
+
+cd C:\git
+ Dentro da pasta
+   git init
+------------------------------------------------------------------------
+ver situação do git
+git status
+
+adicionar arquivos (tornar tracked)(staged = pronto para commit)
+git add index.html
+
+remover arquivos (tornar untracked)(unstaged = não pronto para commit)
+git rm --cached index.html
+
+
+adicionar todas da pasta (tornar tracked)
+git add .
+
+
+commit (snapshot)
+git commit -m "Primeiro commit - Todos os arquivos"
+
+------------------------------------------------------------------------
+Resumo:
+0) status
+1) add
+2) rm
+3) commit
+------------------------------------------------------------------------
+Após modificar um arquivo
+ ver as diferenças com
+   git diff
+   > para sair da visualização tecle 'q' ou 'esc'	
+
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Posições do arquivo {working, staging, commit}
+  
+1) Ao alterar o arquivo fica ->> {working} 
+
+1.1) Antes de add pode restaurar
+   git restore <file> (Para discartar mudanças)
+  
+1.2 (git add <file>) fica ->> {staging} significa pronto para commitar
+
+2) Volta para {working}
+   git restore --stage <file>
+
+3) (git commit -m "Alterei o título") fica ->> {commit} posição final    	
+  
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Ver todos os commits
+  git log 
+  ou
+  git log --oneline (forma resumida)
+
+------------------------------------------------------------------------
+Ir Direto de {working} para {commit} usar [-a]
+  git commit -a -m "Incluido xxx no título"
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+Remover Arquivo (apagar)
+git rm <file>  
+  fica status {deleted}
+git restore --staged <file>
+  fica pronto para restaurar
+
+Restaurar os arquivos apagados
+git restore <file>
+
+------------------------------------------------------------------------
+Renomear Arquivos
+git mv sapo3.jpg sapo33.jpg
+  fica status {renamed}
+
+------------------------------------------------------------------------
+Amend [Alterar]
+Alterar a mensagem do Último Commit
+git commit -m "Nova mensagem alterada" --amend
+
+------------------------------------------------------------------------
+Visualizar logs completos
+git log -p
+
+
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Git Reset {soft, mixed, hard}
+
+Soft:  A versão anterior fica  {staged}, espera commit
+Mixed: A versão anterior fica {unstaged}, espera add,commit
+Hard:  A versão anterior é perdida definitivamente
+------------------------------------------------------------------------
+Mixed é o default
+-----------------
+Hard:
+git reset --hard NUMERO_LOG_QUE_VOLTARA
+
+------------------------------------------------------------------------
+Criando Alias [Atalhos de comando]
+git config alias.log1 "log --oneline"
+git config --global alias.log1 "log --oneline"
+
+ Pode ser alterado no arquivo [.gitconfig]
+
+------------------------------------------------------------------------
+Branch (Ramo)
+ git branch
+
+Criar NOVA branch para não mexer na Branch Main
+Da [Nova branch] fazer MERGE para a [Main branch]
+------------------------------------------------------------------------
+Ver as branchs
+git branch
+
+Adicionar branch
+git branch <NomeBranch>
+
+Mudar de branch
+git switch <NomeBranch>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+  
+ 
