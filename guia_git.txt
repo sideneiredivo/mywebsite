@@ -160,10 +160,14 @@ Push
 git remote add origin https://github.com/sideneiredivo/mywebsite.git
 git branch -M master
 git push -u origin master
+<<<<<<< HEAD
 
 Após criar nova Branch Local
 Pode carrega-la no gitHub com
   git push --all
+=======
+------------------------------------------------------------------------
+>>>>>>> AddItem
 
 
 
@@ -183,12 +187,15 @@ Pode carrega-la no gitHub com
 
 
 
+<<<<<<< HEAD
 
 
 
 
 
 
+=======
+>>>>>>> AddItem
 	
   
  
