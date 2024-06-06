@@ -29,12 +29,7 @@ git add .
 commit (snapshot)
 git commit -m "Primeiro commit - Todos os arquivos"
 
-------------------------------------------------------------------------
-Resumo:
-0) status
-1) add
-2) rm
-3) commit
+
 ------------------------------------------------------------------------
 Após modificar um arquivo
  ver as diferenças com
@@ -130,31 +125,44 @@ git branch <NomeBranch>
 Mudar de branch
 git switch <NomeBranch>
 
+Adicionar e Mudar de branch 
+git switch -c <NomeBranch>
+
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+MERGE - Copiar da Branch_Origem para Branch_Destino
+Vai até a Branch_Destino 
+ git merge -m "Mensagem explicativa do merge" <Branch_Origem>
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+Remover - Branchs
+git branch -d <Nome_Branch>
+
+------------------------------------------------------------------------
+Resumo:
+Arquivo alterado{working}
+add{staging}
+commit{commit}
+rm{deleted}
+mv{renamed}
+------------------------------------------------------------------------
+Posições do arquivo {working, staging, commit, deleted, renamed}
+
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+************************************************************************
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+GitHub
+------------------------------------------------------------------------
+Push
+git remote add origin https://github.com/sideneiredivo/mywebsite.git
+git branch -M master
+git push -u origin master
+------------------------------------------------------------------------
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
 
 
 
